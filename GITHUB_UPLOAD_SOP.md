@@ -92,4 +92,72 @@ git add .
 git commit -m "Initial commit"
 git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
 git push -u origin main
+```
+
+---
+
+# Subsequent Pushes: Updating Your GitHub Repository
+
+After the initial push, use these steps to upload new changes:
+
+## Step 1: Open Terminal/Command Prompt
+
+Navigate to your project directory:
+```sh
+cd "C:\Users\User\Desktop\DF New Website 2025\diagnostic.dojofinancier.ca"
+```
+
+## Step 2: Check the Status (Optional)
+
+See which files have changed:
+```sh
+git status
+```
+
+## Step 3: Add Changed Files
+
+Add all changed files:
+```sh
+git add .
+```
+Or, to add specific files:
+```sh
+git add path/to/your/file
+```
+
+## Step 4: Commit the Changes
+
+Write a meaningful commit message:
+```sh
+git commit -m "Describe your changes here"
+```
+
+## Step 5: Push to GitHub
+
+Push your changes:
+```sh
+git push
+```
+
+---
+
+## Notes
+
+- You do **not** need to run `git init` or `git remote add origin` again.
+- If you are working on a branch other than `main`, use `git push origin branch-name`.
+- If you pull changes from GitHub (e.g., if someone else has pushed changes), use:
+  ```sh
+  git pull
+  ```
+  before pushing, to avoid conflicts.
+
+---
+
+## Copy-Paste Template for Subsequent Pushes
+
+```sh
+cd "PATH/TO/YOUR/PROJECT"
+git add .
+git commit -m "Describe your changes"
+git push
 ``` 

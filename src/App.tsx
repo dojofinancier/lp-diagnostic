@@ -14,7 +14,12 @@ import {
   Star,
   ChevronDown,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  SearchCheck,
+  MonitorDot,
+  Lightbulb,
+  Laptop2,
+  ArrowDown
 } from 'lucide-react';
 
 function App() {
@@ -122,12 +127,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-[#0f4347] rounded-lg flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-white" />
-              </div>
-              <span className={`text-xl font-bold transition-colors ${
-                isScrolled ? 'text-gray-900' : 'text-white'
-              }`}>FinanceProQC</span>
+            <img src="http://dojofinancier.ca/wp-content/uploads/2025/06/LOGO-Black-300.webp" alt="Logo" className="w-300 h-51 rounded-lg object-cover" />
             </div>
             <button className="bg-[#0f4347] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#0a2d30] transition-colors">
               Diagnostic Gratuit
@@ -143,16 +143,15 @@ function App() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-gray-900 leading-tight">
-                  Obtenez une image claire de la{' '}
+                  Votre entreprise est-elle{' '}
                   <span className="text-[#0f4347]">
-                    santé financière
+                    SOLIDE
                   </span>{' '}
-                  de votre entreprise en{' '}
-                  <span className="text-orange-500">5 minutes chrono !</span>
+                  <span className="text-orange-500">financièrement?</span>
                 </h1>
                 
                 <p className="text-2xl text-gray-600 leading-relaxed font-medium">
-                  Vous êtes entrepreneur ou travailleur autonome au Québec et vous souhaitez reprendre le contrôle de vos finances? Ce diagnostic gratuit vous révèle instantanément vos points forts, vos risques et vos meilleures opportunités financières.
+                Entrepreneur ou travailleur autonome au Québec ? Obtenez immédiatement un diagnostic personnalisé de vos finances grâce à notre questionnaire gratuit.
                 </p>
               </div>
 
@@ -182,76 +181,12 @@ function App() {
             <div className="mt-12 lg:mt-0">
               <div className="relative">
                 {/* 8.5x11 Paper Proportions (aspect ratio 1:1.294) */}
-                <div className="bg-white rounded-lg shadow-2xl p-6 transform rotate-2 hover:rotate-0 transition-transform duration-300" style={{aspectRatio: '8.5/11', maxWidth: '320px', margin: '0 auto'}}>
-                  <div className="space-y-4 h-full flex flex-col">
-                    <div className="text-center border-b pb-3">
-                      <h3 className="text-sm font-bold text-gray-800 mb-2">Rapport de Santé Financière</h3>
-                      <div className="flex items-center justify-center space-x-2">
-                        <span className="text-xs font-medium text-gray-500">Score Global</span>
-                        <span className="text-2xl font-black text-[#0f4347]">87/100</span>
-                      </div>
-                      <div className="w-full bg-gray-200 rounded-full h-2 mt-2">
-                        <div className="bg-gradient-to-r from-[#0f4347] to-orange-500 h-2 rounded-full" style={{width: '87%'}}></div>
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-3 flex-1">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <div className="text-xs font-semibold text-gray-700">Gestion de la trésorerie</div>
-                          <div className="text-xs font-medium text-gray-500 mt-1">Recommandations:</div>
-                          <div className="text-xs text-gray-400 blur-sm leading-tight">
-                            Optimisez vos délais de paiement<br/>
-                            Mettez en place une réserve<br/>
-                            Automatisez vos suivis
-                          </div>
-                        </div>
-                        <div className="text-lg font-bold text-orange-600">72</div>
-                      </div>
-                      
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <div className="text-xs font-semibold text-gray-700">Budget & Planification</div>
-                          <div className="text-xs font-medium text-gray-500 mt-1">Recommandations:</div>
-                          <div className="text-xs text-gray-400 blur-sm leading-tight">
-                            Excellent travail, continuez<br/>
-                            Ajustez vos prévisions<br/>
-                            Planifiez vos investissements
-                          </div>
-                        </div>
-                        <div className="text-lg font-bold text-[#0f4347]">95</div>
-                      </div>
-                      
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <div className="text-xs font-semibold text-gray-700">Fiscalité & rémunération</div>
-                          <div className="text-xs font-medium text-gray-500 mt-1">Recommandations:</div>
-                          <div className="text-xs text-gray-400 blur-sm leading-tight">
-                            Optimisez votre structure<br/>
-                            Planifiez vos cotisations<br/>
-                            Consultez un fiscaliste
-                          </div>
-                        </div>
-                        <div className="text-lg font-bold text-orange-600">83</div>
-                      </div>
-                      
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <div className="text-xs font-semibold text-gray-700">Systèmes & visibilité</div>
-                          <div className="text-xs font-medium text-gray-500 mt-1">Recommandations:</div>
-                          <div className="text-xs text-gray-400 blur-sm leading-tight">
-                            Très bon système en place<br/>
-                            Automatisez davantage<br/>
-                            Tableaux de bord avancés
-                          </div>
-                        </div>
-                        <div className="text-lg font-bold text-[#0f4347]">91</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -top-4 -right-4 w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center shadow-lg">
-                  <Star className="w-8 h-8 text-white" />
+                <div className=" rounded-lg shadow-2xl p-2 transform rotate-2 hover:rotate-0 transition-transform duration-300" style={{aspectRatio: '8/11', maxWidth: '450px', margin: '0 auto'}}>
+                <img
+                  src="http://dojofinancier.ca/wp-content/uploads/2025/07/ChatGPT-Image-Jul-8-2025-11_14_10-AM.webp"
+                  alt="Hero"
+                  className="w-full h-full object-contain"
+                />
                 </div>
               </div>
             </div>
@@ -273,11 +208,11 @@ function App() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-[#0f4347]/5 rounded-2xl p-8 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-[#0f4347] rounded-xl flex items-center justify-center mb-6">
-                <CheckCircle className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                <Laptop2 className="w-16 h-16 text-#0f4347]" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                ✅ Comprenez vos finances en quelques clics
+                Comprenez vos finances en quelques clics
               </h3>
               <p className="text-gray-600 leading-relaxed text-lg">
                 Évaluez votre gestion du cash-flow, votre stratégie d'investissement et vos processus budgétaires en toute simplicité.
@@ -285,11 +220,11 @@ function App() {
             </div>
 
             <div className="bg-orange-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center mb-6">
-                <TrendingUp className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                <SearchCheck className="w-16 h-16 text-orange-500" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                ✅ Identifiez immédiatement vos points à améliorer
+                Identifiez immédiatement vos points à améliorer
               </h3>
               <p className="text-gray-600 leading-relaxed text-lg">
                 Recevez un diagnostic rapide pour cibler précisément les aspects à renforcer dès aujourd'hui.
@@ -297,11 +232,11 @@ function App() {
             </div>
 
             <div className="bg-[#0f4347]/5 rounded-2xl p-8 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-[#0f4347] rounded-xl flex items-center justify-center mb-6">
-                <BarChart3 className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                <Lightbulb className="w-16 h-16 text-#0f4347]" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                ✅ Prenez des décisions stratégiques éclairées
+                Prenez des décisions stratégiques éclairées
               </h3>
               <p className="text-gray-600 leading-relaxed text-lg">
                 Obtenez des recommandations pratiques et personnalisées pour diminuer les fluctuations de trésorerie et soutenir une croissance durable.
@@ -386,92 +321,62 @@ function App() {
             </p>
           </div>
 
-          <div className="space-y-12">
-            <div className="flex flex-col lg:flex-row items-center lg:space-x-12">
-              <div className="lg:w-1/2 mb-8 lg:mb-0">
-                <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-16 h-16 bg-[#0f4347] rounded-full flex items-center justify-center text-white font-bold text-xl">
-                    1
-                  </div>
-                  <h3 className="text-3xl font-bold text-gray-900">
-                    1️⃣ Évaluez votre situation actuelle
-                  </h3>
-                </div>
+          <div className="flex flex-col items-center space-y-12">
+            {/* Step 1 */}
+            <div className="flex flex-col items-center text-center max-w-[600px] mx-auto">
+              <div className="w-16 h-16 bg-[#0f4347] rounded-full flex items-center justify-center text-white font-bold text-xl mb-4">1</div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-2">Évaluez votre situation actuelle</h3>
+              <p className="text-gray-600 text-xl leading-relaxed">
+                Complétez un questionnaire simple et interactif (5-7 minutes seulement).
+              </p>
+            </div>
+
+            {/* Arrow */}
+            <ArrowDown className="w-10 h-10 text-orange-500" />
+
+            {/* Step 2 */}
+            <div className="flex flex-col items-center text-center max-w-[600px] mx-auto">
+              <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-4">2</div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-2">Obtenez votre rapport personnalisé</h3>
+              <div className="space-y-4">
                 <p className="text-gray-600 text-xl leading-relaxed">
-                  Complétez un questionnaire simple et interactif (5-7 minutes seulement).
+                  Découvrez instantanément votre score global de santé financière avec des résultats détaillés sur chaque aspect essentiel :
                 </p>
-              </div>
-              <div className="lg:w-1/2">
-                <div className="bg-[#0f4347]/5 rounded-2xl p-8">
-                  <FileText className="w-16 h-16 text-[#0f4347] mx-auto" />
-                </div>
+                <ul className="space-y-2 text-gray-600 text-lg">
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-orange-500" />
+                    <span>Flux de trésorerie & Stabilité</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-orange-500" />
+                    <span>Budget, Tarification & Rentabilité</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-orange-500" />
+                    <span>Taxes & Conformité (Québec)</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-orange-500" />
+                    <span>Systèmes Financiers & Visibilité</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-orange-500" />
+                    <span>Croissance & Finance stratégique</span>
+                  </li>
+                </ul>
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row-reverse items-center lg:space-x-reverse lg:space-x-12">
-              <div className="lg:w-1/2 mb-8 lg:mb-0">
-                <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                    2
-                  </div>
-                  <h3 className="text-3xl font-bold text-gray-900">
-                    2️⃣ Obtenez votre rapport personnalisé
-                  </h3>
-                </div>
-                <div className="space-y-4">
-                  <p className="text-gray-600 text-xl leading-relaxed">
-                    Découvrez instantanément votre score global de santé financière avec des résultats détaillés sur chaque aspect essentiel :
-                  </p>
-                  <ul className="space-y-2 text-gray-600 text-lg">
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-5 h-5 text-[#0f4347]" />
-                      <span>Flux de trésorerie & Stabilité</span>
-                    </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-5 h-5 text-[#0f4347]" />
-                      <span>Budget, Tarification & Rentabilité</span>
-                    </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-5 h-5 text-[#0f4347]" />
-                      <span>Taxes & Conformité (Québec)</span>
-                    </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-5 h-5 text-[#0f4347]" />
-                      <span>Systèmes Financiers & Visibilité</span>
-                    </li>
-                    <li className="flex items-center space-x-2">
-                      <CheckCircle className="w-5 h-5 text-[#0f4347]" />
-                      <span>Croissance & Finance stratégique</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="lg:w-1/2">
-                <div className="bg-orange-50 rounded-2xl p-8">
-                  <BarChart3 className="w-16 h-16 text-orange-600 mx-auto" />
-                </div>
-              </div>
-            </div>
+            {/* Arrow */}
+            <ArrowDown className="w-10 h-10 text-orange-500" />
 
-            <div className="flex flex-col lg:flex-row items-center lg:space-x-12">
-              <div className="lg:w-1/2 mb-8 lg:mb-0">
-                <div className="flex items-center space-x-4 mb-6">
-                  <div className="w-16 h-16 bg-[#0f4347] rounded-full flex items-center justify-center text-white font-bold text-xl">
-                    3
-                  </div>
-                  <h3 className="text-3xl font-bold text-gray-900">
-                    3️⃣ Passez immédiatement à l'action
-                  </h3>
-                </div>
-                <p className="text-gray-600 text-xl leading-relaxed">
-                  Recevez des recommandations pratiques adaptées à vos réponses, pour prendre immédiatement les bonnes décisions.
-                </p>
-              </div>
-              <div className="lg:w-1/2">
-                <div className="bg-[#0f4347]/5 rounded-2xl p-8">
-                  <TrendingUp className="w-16 h-16 text-[#0f4347] mx-auto" />
-                </div>
-              </div>
+            {/* Step 3 */}
+            <div className="flex flex-col items-center text-center max-w-[600px] mx-auto">
+              <div className="w-16 h-16 bg-[#0f4347] rounded-full flex items-center justify-center text-white font-bold text-xl mb-4">3</div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-2">Passez immédiatement à l'action</h3>
+              <p className="text-gray-600 text-xl leading-relaxed">
+                Recevez des recommandations pratiques adaptées à vos réponses, pour prendre immédiatement les bonnes décisions.
+              </p>
             </div>
           </div>
         </div>
@@ -607,13 +512,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
-              <div className="w-10 h-10 bg-[#0f4347] rounded-lg flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-white" />
-              </div>
-              <span className="text-xl font-bold">FinanceProQC</span>
+            <img src="http://dojofinancier.ca/wp-content/uploads/2025/06/LOGO-White-200.webp" alt="Logo" className="w-200 h-34 rounded-lg object-cover" />
             </div>
             <div className="text-gray-400">
-              © 2024 FinanceProQC. Tous droits réservés.
+              © 2025 Le Dojo Financier. Tous droits réservés.
             </div>
           </div>
         </div>
