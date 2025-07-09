@@ -129,9 +129,9 @@ function App() {
             <div className="flex items-center space-x-3">
             <img src="http://dojofinancier.ca/wp-content/uploads/2025/06/LOGO-Black-300.webp" alt="Logo" className="w-300 h-51 rounded-lg object-cover" />
             </div>
-            <button className="bg-[#0f4347] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#0a2d30] transition-colors">
+            <a href="http://questionnaire.dojofinancier.ca/" target="_blank" rel="noopener noreferrer" className="bg-[#0f4347] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#0a2d30] transition-colors flex items-center">
               Diagnostic Gratuit
-            </button>
+            </a>
           </div>
         </div>
       </header>
@@ -156,10 +156,10 @@ function App() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-[#0f4347] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#0a2d30] hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 flex items-center justify-center space-x-2">
+                <a href="http://questionnaire.dojofinancier.ca/" target="_blank" rel="noopener noreferrer" className="bg-[#0f4347] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#0a2d30] hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 flex items-center justify-center space-x-2">
                   <span>👉 Évaluez votre santé financière gratuitement</span>
                   <ArrowRight className="w-5 h-5" />
-                </button>
+                </a>
               </div>
 
               <div className="flex items-center space-x-8 text-sm text-gray-500">
@@ -446,10 +446,10 @@ function App() {
           <h2 className="text-5xl font-black text-white mb-8">
             Prêt à reprendre le contrôle de vos finances ?
           </h2>
-          <button className="bg-white text-[#0f4347] px-12 py-4 rounded-xl font-bold text-xl hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 flex items-center justify-center space-x-3 mx-auto">
+          <a href="http://questionnaire.dojofinancier.ca/" target="_blank" rel="noopener noreferrer" className="bg-white text-[#0f4347] px-12 py-4 rounded-xl font-bold text-xl hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 flex items-center justify-center space-x-3 mx-auto">
             <span>👉 Oui, je veux mon rapport personnalisé</span>
             <ArrowRight className="w-6 h-6" />
-          </button>
+          </a>
         </div>
       </section>
 
@@ -500,10 +500,10 @@ function App() {
           <p className="text-2xl text-gray-300 mb-10 font-medium">
             Rejoignez des centaines d'entrepreneurs qui ont transformé leur gestion financière
           </p>
-          <button className="bg-orange-600 text-white px-12 py-4 rounded-xl font-bold text-xl hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 flex items-center justify-center space-x-3 mx-auto">
+          <a href="http://questionnaire.dojofinancier.ca/" target="_blank" rel="noopener noreferrer" className="bg-orange-600 text-white px-12 py-4 rounded-xl font-bold text-xl hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 flex items-center justify-center space-x-3 mx-auto">
             <span>👉 Je m'inscris à l'évaluation gratuite maintenant</span>
             <ArrowRight className="w-6 h-6" />
-          </button>
+          </a>
         </div>
       </section>
 
